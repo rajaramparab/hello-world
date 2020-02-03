@@ -1,0 +1,51 @@
+.topnav{    
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+    
+}
+.topnav li a {
+    
+    display: block;
+    background-color: rgb(114, 206, 126);
+    color: rgb(4, 107, 35);
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    
+  }
+.topnav ul{
+    width: 100%;
+    list-style-type: georgian;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    
+    
+}
+.topnav li {
+    float: left;
+    border-right: 2px solid white;
+  }
+.topnav li a:hover {
+    background-color: teal;
+    color: white;
+  }
+.footer{
+        font-style: initial;
+        font-family: 'Lucida Sans';
+        color: white;
+        background-color: gray;
+        text-align: center;
+        align-items: center;
+        
+  }
+.footer a:hover{
+    opacity: 0.5;
+}
+.fa{
+    color: white;
+}
