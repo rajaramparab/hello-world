@@ -4,7 +4,7 @@
 <title>Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,65 +19,58 @@
   <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
-<body class="w3-light-grey">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-    <a class="navbar-brand" href="index.html">Data Science Enthusiast</a>
-  
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <!-- This is the actual code that creates the "hamburger icon" -->
-    <!-- The data-target grabs ids to put into the icon -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-  
-    <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <div class="navbar-nav">
-  
-        <!-- the span class "sr-only" tells screen readers that Home is the active link, for accessibility -->
-        <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link active" href="resume.html">Resume</a>
-        <a class="nav-item nav-link" href="https://github.com/rajaramparab" target="_blank">Github Repos</a>
-  
-        <!-- DROPDOWN MENU -->
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            My Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu">
-            <a class="dropdown-item" href="#">Project 1</a>
-            <a class="dropdown-item" href="#">Project2</a>
-            <a class="dropdown-item" href="http://www.google.com">Go to Google</a>
-            
-  
-            <!-- Use this to separate a new link: -->
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Go to Main Page</a>
-          </div>
-        </div>
-  
-        <!-- SEARCH BAR -->
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline my-2 my-sm-0" type="submit">Submit</button>
-        </form>
-  
-      </div> <!-- /.navbar-nav, left-hand content -->
-  
-      <!-- STUFF ON THE RIGHT -->
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" href="#">About me!</a>
-      </div> <!-- /.navbar-nav, right-hand content -->
-  
-    </div> <!-- /.navbar-collapse -->
-  </nav>
-
-
-
+<body>
 <!-- RESUME Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <!-- Navigation bar starts-->
+    <nav class="navbar navbar-light navbar-expand-lg bg-faded navbar-fixed-top">
+      <a href="index.html" class="navbar-brand d-flex w-50 m-auto"> Data Science Enthusiast</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3" >
+          <ul class="navbar-nav w-100 justify-content-center">
+              <li class="nav-item  ml-auto mr-3">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active ml-auto mr-3" >
+                  <a class="nav-link " href="resume.html">Resume</a>
+              </li>
+
+              <li class="nav-item img-responsive ml-auto mr-3">
+                <a href="index.html" class="navbar-brand d-flex w-50 m-auto">
+                <img class="nav-link" src="images/icon.svg" alt="Data Science Enthusiast" width="50px">
+              </a>
+            </li>
+
+              <li class="nav-item ml-auto mr-3">
+                  <a class="nav-link" href="https://github.com/rajaramparab" target="_blank">Github</a>
+              </li>
+
+              <div class="nav-item dropdown ml-auto mr-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu" >
+                  <a class="dropdown-item" href="#">Project 1</a>
+                  <a class="dropdown-item" href="#">Project2</a>
+                  <a class="dropdown-item" href="plot.html">be colorful</a>
+                  <!-- to separate a another link: -->
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="index.html">Go to Home Page</a>
+                </div>
+              </div>
+          </ul>
+          <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+              
+              <li class="nav-item">
+                  <a class="nav-link" href="resume.html">Contact Me!</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+    <!-- Navigation bar ends-->
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -228,10 +221,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+<footer class="w3-container w3-teal w3-center w3-margin-top" >
   <p>Find me on social media.</p>
-  <a href="https://www.facebook.com/parabrajaram10" class="fa fa-facebook-official w3-hover-opacity" target="_blank"></a>
-  <a href="https://twitter.com/rajaram_parab" class="fa fa-twitter w3-hover-opacity" target="_blank"></i>
+  <a href="https://www.facebook.com/parabrajaram10" class="fa fa-facebook-official w3-hover-opacity" target="_blank" ></a>
+  <a href="https://twitter.com/rajaram_parab" class="fa fa-twitter w3-hover-opacity" target="_blank" ></i>
   <a href="https://www.linkedin.com/in/rajaram-parab-394994ab/" class="fa fa-linkedin w3-hover-opacity" target="_blank"></a>
   
 </footer>

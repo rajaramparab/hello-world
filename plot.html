@@ -12,77 +12,75 @@
     <title>Seaborn Heatmap cmap</title>
 </head>
 <body onload=myFunction()>
+  <div class="container-fluid">
 
-    <h1>Rajaram Parab</h1>
-<!-- <img src="images/me.jpeg" alt="Rajaram Parab" class="embed-responsive-16by9" height="180px"> -->
+   <!-- Navigation bar starts-->
+   <nav class="navbar navbar-light navbar-expand-lg bg-faded navbar-fixed-top">
+    <a href="index.html" class="navbar-brand d-flex w-50 m-auto"> Data Science Enthusiast</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3" >
+        <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item  ml-auto mr-3">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item ml-auto mr-3" >
+                <a class="nav-link " href="resume.html">Resume</a>
+            </li>
 
+            <li class="nav-item img-responsive ml-auto mr-3">
+              <a href="index.html" class="navbar-brand d-flex w-50 m-auto">
+              <img class="nav-link" src="images/icon.svg" alt="Data Science Enthusiast" width="50px">
+            </a>
+          </li>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <li class="nav-item ml-auto mr-3">
+                <a class="nav-link" href="https://github.com/rajaramparab" target="_blank">Github</a>
+            </li>
 
-  <a class="navbar-brand" href="#">Data Science Enthusiast</a>
-
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <!-- This is the actual code that creates the "hamburger icon" -->
-  <!-- The data-target grabs ids to put into the icon -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <div class="navbar-nav">
-
-      <!-- the span class "sr-only" tells screen readers that Home is the active link, for accessibility -->
-      <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="resume.html">Resume</a>
-      <a class="nav-item nav-link" href="https://github.com/rajaramparab" target="_blank">Github Repos</a>
-
-      <!-- DROPDOWN MENU -->
-      <div class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          My Projects
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu">
-          <a class="dropdown-item" href="#">Project 1</a>
-          <a class="dropdown-item" href="#">Project2</a>
-          <a class="dropdown-item" href="http://www.google.com">Go to Google</a>
-          
-
-          <!-- Use this to separate a new link: -->
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Go to Main Page</a>
-        </div>
-      </div>
-
-      <!-- SEARCH BAR -->
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline my-2 my-sm-0" type="submit">Submit</button>
-      </form>
-
-    </div> <!-- /.navbar-nav, left-hand content -->
-
-    <!-- STUFF ON THE RIGHT -->
-    <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link" href="#">About me!</a>
-    </div> <!-- /.navbar-nav, right-hand content -->
-
-  </div> <!-- /.navbar-collapse -->
-</nav>
-
+            <div class="nav-item active dropdown ml-auto mr-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                Projects
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu" >
+                <a class="dropdown-item" href="#">Project 1</a>
+                <a class="dropdown-item" href="#">Project2</a>
+                <a class="dropdown-item" href="plot.html">be colorful</a>
+                <!-- to separate a another link: -->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html">Go to Home Page</a>
+              </div>
+            </div>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Contact Me!</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  <!-- Navigation bar ends-->
 <!-- Plot Page Content -->
 
-<div class="container">
+
     <div class="jumbotron">
       <h1>Be Colorful!!! </h1>
       <p>
         <h2>Seaborn Colormap(cmap)</h2>
-        <p>So you used Seaborn and Plotted a nice Heatmap
-          and now you want to make it more beautiful..
-          are you wondering which cmap to apply?
+        <p>When we plot Seaborn Heatmap and want to make it colorful.
+          then we often try out defferent inbuilt cmaps.
+          Just see how they look and choose your cmap!
         <br>Check these Out : </p>
         <div class="container pt-3 text-center">
+            <div class="row pt-3" >
+            <div id="plot" class="col-sm"></div>
+            <div id="plot" class="col-sm"></div>
+            <div id="plot" class="col-sm"></div>
+            <div id="plot" class="col-sm"></div>
+            </div>
             <div class="row pt-3" >
             <div id="plot" class="col-sm"></div>
             <div id="plot" class="col-sm"></div>
@@ -106,6 +104,6 @@
       
     </footer>    
    
-    <script src="testscript.js"></script>
+    <script src="scripts/script-plot.js"></script>
 </body>
 </html>
