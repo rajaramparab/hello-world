@@ -27,9 +27,10 @@ body{
 /* Navigation Bar Properties */
 .navbar {
     margin-top: 50px;
-    vertical-align: bottom;
-    min-height: 100px;
-    font-weight: bold;   
+    vertical-align: middle;
+    min-height: 80px;
+    font-weight: bold; 
+    
     
 }
 .navbar .nav-link{    
@@ -37,7 +38,7 @@ body{
     
 }
 .navbar .navbar-brand{
-     font-size: xx-large;
+    font-size: xx-large;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium';
     color: lightseagreen;
@@ -48,14 +49,16 @@ body{
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
     border-bottom: 3px solid transparent;
+    
 }
 
 .navbar .nav-item:hover {
     border-top: 3px solid lightblue;
     background-color:rgb(238, 218, 155);
     border-radius: 20px;
+    padding: 0px;
   }
   
 .navbar .nav-item.active {
@@ -63,16 +66,18 @@ body{
   }
 
 #myCanvas{
-
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    
+    position: fixed;
+    z-index: -1;   
   }
  
 .jumbotron {
       opacity: 0.95;
     
+}
+#codeblock{
+    background-color: lightblue;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 10px;
+    border: 2px solid burlywood;
 }

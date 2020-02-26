@@ -50,8 +50,8 @@
               <a class="nav-link" href="https://github.com/rajaramparab" target="_blank">Github</a>
           </li>
 
-          <div class="nav-item dropdown ml-auto mr-3">
-            <a class="nav-link active dropdown-toggle" href="#" id="navbar-dropdown-menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          <div class="nav-item active dropdown ml-auto mr-3">
+            <a class="nav-link  dropdown-toggle" href="#" id="navbar-dropdown-menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
               Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu" >
@@ -74,17 +74,48 @@
 </nav>
 <hr>
 <!-- Navigation bar ends-->
+
+
 <!-- Plot Page Content -->
 
 
     <div class="jumbotron">
       <h1>Be Colorful!!! </h1>
       <p>
-        <h2>Seaborn Colormap(cmap)</h2>
-        <p>When we plot Seaborn Heatmap and want to make it colorful.
+        <h2>Seaborn.heatmap </h2>
+        <h5>Colormap(cmap) Examples</h5>
+        <p>Seaborn Heatmap is used to visualize Numerical Data where 
+          each cell is colored based on the value it contains. <br>
+          
+          When we plot Seaborn Heatmap and want to make it colorful.
           then we often try out defferent inbuilt cmaps.
           Just see how they look and choose your cmap!
         <br>Check these Out : </p>
+        
+        <div class="row">
+          <div class="col-lg-4">
+              <div id="codeblock">
+                Make necessary imports: <br>
+              <code>import numpy as np <br>
+                import pandas as pd <br>
+                import matplotlib.pyplot as plt <br>
+                import seaborn as sns <br>
+                %matplotlib inline</code>
+              </div>
+         </div>
+
+         <div class="col-lg-8">
+              <div id="codeblock">
+                Here we are creating dummy data to visualize heatmap as below(Changing cmap Gives the result as below): <br>
+              <code>df = pd.DataFrame(np.random.random((10,10)), columns=["a","b","c","d","e","f","g","h","i","j"]) <br>
+                customfontdict={'family': 'fantasy','color':  'blue', 'weight': 'bold','size':60} <br>
+                plt.figure(figsize=(20,15),edgecolor='black')<br>
+                sns_plot=sns.heatmap(df,cmap='Accent')<br>
+                plt.title('Accent',fontdict=customfontdict,y=-0.01) </code>
+              </div>
+            </div>
+        </div>
+
         <div class="container pt-3 text-center">
             <div class="row pt-3" >
             <div id="plot" class="col-sm"></div>
