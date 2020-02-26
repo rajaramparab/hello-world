@@ -20,23 +20,19 @@
 
 
 
-/* Add a black background color to the top navigation */
+/* Navigation Bar Properties */
 .navbar {
     margin-top: 50px;
     vertical-align: middle;
     min-height: 150px;
     font-weight: bold;
-
-    background-color:white;
-    
-    
+    background-color:white;    
 }
-.navbar .nav-link{
-       font-size: x-large;
+.navbar .nav-link{    font-size: x-large;
     
 }
 .navbar .navbar-brand{
-    font-size: xx-large;
+     font-size: xx-large;
     font-weight: bolder;
 }
 
@@ -51,7 +47,8 @@
 }
 
 .navbar a:hover {
-    border-bottom: 3px solid lightblue;
+    border-bottom: 3px solid gray;
+    background-color: lightgray;
   }
   
 .navbar a.active {
