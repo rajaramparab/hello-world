@@ -1,8 +1,12 @@
+body{
+    background-color: linen; 
+}
+
 .footer{
         font-style: initial;
         font-family: 'Lucida Sans';
         color: white;
-        background-color: gray;
+        background-color: teal;
         text-align: center;
         align-items: center;
         
@@ -10,7 +14,7 @@
 .footer a:hover{
     opacity: 0.5;
 }
-.fa{
+.fa-facebook-official ,.fa-twitter ,.fa-linkedin{
     color: white !important;
 }
 .col-md-8{
@@ -23,34 +27,52 @@
 /* Navigation Bar Properties */
 .navbar {
     margin-top: 50px;
-    vertical-align: middle;
-    min-height: 150px;
-    font-weight: bold;
-    background-color:white;    
+    vertical-align: bottom;
+    min-height: 100px;
+    font-weight: bold;   
+    
 }
-.navbar .nav-link{    font-size: x-large;
+.navbar .nav-link{    
+    font-size: x-large;  
     
 }
 .navbar .navbar-brand{
      font-size: xx-large;
     font-weight: bolder;
+    font-family: 'Franklin Gothic Medium';
+    color: lightseagreen;
 }
 
 .navbar a{
     float: left;
     display: block;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     border-bottom: 3px solid transparent;
 }
 
-.navbar a:hover {
-    border-bottom: 3px solid gray;
-    background-color: lightgray;
+.navbar .nav-item:hover {
+    border-top: 3px solid lightblue;
+    background-color:rgb(238, 218, 155);
+    border-radius: 20px;
   }
   
-.navbar a.active {
-    border-bottom: 3px solid lightblue;
+.navbar .nav-item.active {
+    border-top: 3px solid lightgreen;
   }
+
+#myCanvas{
+
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+  }
+ 
+.jumbotron {
+      opacity: 0.95;
+    
+}
