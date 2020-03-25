@@ -1,5 +1,6 @@
 body{
-    background-color: linen; 
+    background-color: white; 
+    background: url(../Github_Page_Updates/images/analysis-bg.jpg) no-repeat center fixed;
 }
 
 .footer{
@@ -16,9 +17,17 @@ body{
 }
 .fa-facebook-official ,.fa-twitter ,.fa-linkedin{
     color: white !important;
+    padding: 14px !important;
+    border: 1px solid rgb(40, 141, 131);
+    border-radius: 30px;
+    background-color: rgb(55, 187, 174) ;
 }
 .col-md-8{
     float: left;
+}
+.row{
+    background-color:rgba(216, 216, 216, 0.95);
+    border-radius: 20px;
 }
 
 
@@ -26,44 +35,58 @@ body{
 
 /* Navigation Bar Properties */
 .navbar {
-    margin-top: 50px;
-    vertical-align: middle;
-    min-height: 80px;
+    display: flex;
+    flex: 1;
+    margin-top: 2vh;
+    align-items: center;
+    text-align: center;
     font-weight: bold; 
-    
-    
+    background: rgba(0,128,128,0.95);
+    border-radius: 40px;
+    padding: 0;
 }
 .navbar .nav-link{    
-    font-size: x-large;  
+    font-size: x-14px;  
     
 }
 .navbar .navbar-brand{
-    font-size: xx-large;
+    display: flex;
+    font-size: x-large;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium';
-    color: lightseagreen;
+    color: white;
+    margin: 0;
+    
 }
 
-.navbar a{
+.dropdown-item{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium';
+    padding:0px;
+    background-color: linen;
+    
+
+}
+.navbar a {
     float: left;
-    display: block;
+    display: flex;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
     border-bottom: 3px solid transparent;
     
 }
 
 .navbar .nav-item:hover {
     border-top: 3px solid lightblue;
-    background-color:rgb(238, 218, 155);
+    background-color:turquoise;
     border-radius: 20px;
-    padding: 0px;
+    
   }
   
 .navbar .nav-item.active {
     border-top: 3px solid lightgreen;
   }
+
 
 #myCanvas{
     position: fixed;
