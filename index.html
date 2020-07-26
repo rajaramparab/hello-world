@@ -1,136 +1,180 @@
 <!DOCTYPE html>
 <html>
-  <head>
-<title>Rajaram Parab</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  
-    <link rel="stylesheet" href="style.css">
+
+    <head>
+	 <meta charset="UTF-8">
+        <title>Rajaram Parab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+        <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    </head>
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="scripts/script.js"></script>
-  </head>
-  
-<body>
-  
-  
-  <!-- Navigation bar starts-->
-<nav class="navbar navbar-light navbar-expand-lg bg-faded navbar-fixed-top">
-  <img src="images/me.jpeg" alt="rajaramparab" class="rounded-circle ml-3" width="40px">
-  <a href="index.html" class="navbar-brand">
-   Data Science Enthusiast</a>
- 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-      <span class="navbar-toggler-icon"></span>
-  </button>
+    <body>
 
-  <div class="navbar-collapse collapse w-100" id="collapsingNavbar3" >
-      <ul class="navbar-nav w-100 justify-content-center">
-          <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item" >
-              <a class="nav-link " href="resume.html">Resume</a>
-          </li>
+        <section class='s1'>
+            <div class="main-container">
+                <div class="greeting-wrapper">
+                <h1>Hi, I'm Rajaram Parab</h1>
+                </div>
 
-          <li class="nav-item img-responsive">
-            <a href="index.html" class="navbar-brand">
-            <img class="nav-link " src="images/icon.svg" alt="Data Science Enthusiast" width="50px">
-  
-          </a>
-        </li>
+                <div class="intro-wrapper">
+                    <div class="nav-wrapper">
+                        <div class="dots-wrapper">
+                            <div id="dot-1" class="browser-dot"></div>
+                            <div id="dot-2" class="browser-dot"></div>
+                            <div id="dot-3" class="browser-dot"></div>
+                        </div>
+                        
+                            <ul id="navigation">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="https://github.com/rajaramparab" target="_blank">Github</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                                <li><a href="resume.pdf" target="_blank">Contact</a></li>
+                            </ul>                         
+                    </div>
 
-          <li class="nav-item">
-              <a class="nav-link" href="https://github.com/rajaramparab" target="_blank">Github</a>
-          </li>
+                    <div class="left-column">
+                        <img id="profile_pic" src="images/rajaram.jpeg" alt="Rajaram Parab" >
+                        <h5 style="text-align: center; line-height:0;">Choose your Theme</h5>
+                        <div id="theme-options-wrapper">
+                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                        </div>
+                        <p id="settings-note">*Theme setting will be saved <br> for your next visit</p>
 
-          <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-              Projects
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu" >
-              <a class="dropdown-item" href="TFJS/mnist/index.html">MNIST</a>
-              <a class="dropdown-item" href="#">Project2</a>
-              <a class="dropdown-item" href="plot.html">be colorful</a>
-              <!-- to separate a another link: -->
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="index.html">Go to Home Page</a>
+                    </div>
+                    <div class="right-column">
+                        <div id="preview-shadow">
+                            <div id="preview">
+                                <h3>What I do</h3>
+                                <p>
+                                I'm Data Analyst and aspiring Data Scientist. Expanding my skillset into Machine Learning and Deep Learning </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-          </div>
-      </ul>
-      <ul class="nav navbar-nav">
-          
-          <li class="nav-item">
-              <a class="nav-link" href="resume.html">Contact Me!</a>
-          </li>
-      </ul>
-  </div>
-</nav>
-<hr>
-<!-- Navigation bar ends-->
+        </section>
 
-    <!-- Home Page Content -->
-    <div class="container">
-    <div class="row">
-    <div class="col-sm-8">
-      <p>
-        <h2>What is Machine Learning? A definition</h2>
-      
-        Machine learning is an application of artificial intelligence (AI) that provides systems 
-        the ability to automatically learn and improve from experience without being explicitly programmed. 
-      <strong>Machine learning focuses on the development of computer programs </strong> that can access data and use it 
-        learn for themselves.
-      <br><br>
-        The process of learning begins with observations or data, such as examples, direct experience, 
-        or instruction, in order to look for patterns in data and make better decisions in the future 
-        based on the examples that we provide.<strong> The primary aim is to allow the computers learn automatically </strong>
-        without human intervention or assistance and adjust actions accordingly.
-      
-        <br><br>
-     <a href="ml.html">open Post</a> 
+        <section class="s2">
+            <div class="main-container">
+    
+                <div class="about-wrapper">
+                    <div class="about-me">
+                        <h4>More about me</h4>    
+                        <p>I like building new projects and love learning new technologies.</p>    
+                        <p>With 4 years of Professional experience in MNC and PSU as Data Analyst and Team lead, now expanding slills into machine learning to become Data Scientist.</p>    
+                        
+                        
+                    </div>
 
+                    <div>
+                        <h4>SKILLSET</h4>
+                            <p>Data Analyst with ML/DL Knowlwdge : <a target="_blank" href="resume.pdf">Download Resume</a></p>
+                            
+                        <div id="skills">                        
+                            <ul>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>MS Excel</li>
+                                <li>Machine Learning</li>
+                                <li>Deep Learning</li>
+                            </ul>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>HTML/CSS</li>
+                                <li>Flask</li>
+                                <li>Django</li>
+                                <li>Mathematics</li>
+                            </ul>    
+                        </div>    
+                    </div>    
+                </div>
+            </div>
+        </section>
+    
 
+        <section class="s1">
+            <div class="main-container">
+                <h3 style="text-align: center;">Some of my hobby projects</h3>
+    
+                <div class="post-wrapper">    
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="images/posts/affr/affr.png">
+                            <div class="post-preview">
+                                <h6 class="post-title">Amazon Fine Food Reviews</h6>
+                                <p class="post-intro">Amazon fine food reviews - Sentiment analysis. The analysis is to study Amazon food review from customers, and try to predict whether a review is positive or negative.</p>
+                                <a href="posts/post.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="images/posts/har/har.JPG">
+                            <div class="post-preview">
+                                <h6 class="post-title">Human Activity Recognition</h6>
+                                <p class="post-intro">This project is to build a model that predicts the human activities such as Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing or Laying.</p>
+                                <a href="posts/post.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="images/posts/bc/bc.JPG">
+                            <div class="post-preview">
+                                <h6 class="post-title">Be Colorful</h6>
+                                <p class="post-intro">Its a fun project to see how we can apply different colormaps in seaborn heatmaps.</p>
+                                <a href="posts/post.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
 
-     <h2>Be Colorful - Seaborn.heatmap</h2>
-     <h5>Colormap(cmap) Examples</h5>
-     Seaborn Heatmap is used to visualize Numerical Data where 
-     each cell is colored based on the value it contains. <br>
-     
-     When we plot Seaborn Heatmap and want to make it colorful.
-     then we often try out defferent inbuilt cmaps.
-     Just see how they look and choose your cmap!
-      <br><br>
-     <a href="plot.html"> open Post</a> 
-
-</div>
-
-
-<div class="col-sm-4 container row">
-  <h2>My Posts</h2>
-  <p>
-    <ul>
-      <li> <a href="ml.html"> What is Machine Learning?</a></li>
-      <li> <a href="plot.html">Be Colorful - Seaborn.heatmap</a> </li>
-    </ul>
-  </p>
-</div>
-</div>
-</div>
-
-
-<footer class="footer">
-  <p>Find me on social media.</p>
-  <a href="https://www.facebook.com/parabrajaram10" class="fa fa-facebook-official " target="_blank"></a>
-  <a href="https://twitter.com/rajaram_parab" class="fa fa-twitter " target="_blank"></i>
-  <a href="https://www.linkedin.com/in/rajaram-parab-394994ab/" class="fa fa-linkedin" target="_blank"></a>
-  
-</footer>
-</body>
+        <section class="s2">
+            <div class="main-container">
+                <h3 style="text-align: center;">Check out my Blogs/Articles</h3>
+    
+                <div class="post-wrapper"> 
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="images/posts/performace-blog/performace-metrics.jpeg">
+                            <div class="post-preview">
+                                <h6 class="post-title">Performance Evaluation Metrics for Machine Learning Models with Python Code - Medium</h6>
+                                <p class="post-intro">In Machine Learning, Model evaluation is the crucial step to check how well our Model is performing on test data. It further gives an indication that how well it will perform in Production. Metrics such as Accuracy, Log Loss are commonly used in Classification Techniques.</p>
+                                <a href="https://medium.com/swlh/performance-evaluation-metrics-for-machine-learning-models-ad0dd480d5af" target="_blank">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+    <section class="s1">
+        <div class="main-container">
+            <p>Find me on social media </p>            
+            <div class="footer-wrapper">                       
+                <div><a href="https://www.facebook.com/parabrajaram10" class="fa fa-facebook-official " target="_blank"></a></div>
+                <div><a href="https://twitter.com/rajaram_parab" class="fa fa-twitter " target="_blank"></a></div>
+                <div><a href="https://www.linkedin.com/in/rajaram-parab-394994ab/" class="fa fa-linkedin" target="_blank"></a> </div>           
+            </div>
+        </div>
+    </section>
+        
+    <script src="scripts/script.js" async defer></script>
+    </body>
 </html>
