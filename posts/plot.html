@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="../css/default.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Seaborn Heatmap cmap</title>
+</head>
+<body onload=myFunction()>
+
+  <canvas id="myCanvas"></canvas>
+
+  <section class="s1">
+    <div class="main-container">
+    <div class="nav-wrapper">
+        <div class="dots-wrapper">
+            <div id="dot-1" class="browser-dot"></div>
+            <div id="dot-2" class="browser-dot"></div>
+            <div id="dot-3" class="browser-dot"></div>
+        </div>
+        
+            <ul id="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://github.com/rajaramparab" target="_blank">Github</a></li>
+                <li><a href="#post-wrapper">Projects</a></li>
+                <li><a href="../resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="../resume.pdf" target="_blank">Contact</a></li>
+            </ul>                         
+    </div>
+</div>
+</section>
+
+<!-- Plot Page Content -->
+
+<section>
+
+    <div class="main-container">
+      <h1>Be Colorful!!! </h1>
+      <p>
+        <h2>Seaborn.heatmap </h2>
+        <h5>Colormap(cmap) Examples</h5>
+        <p>Seaborn Heatmap is used to visualize Numerical Data where 
+          each cell is colored based on the value it contains. <br>
+          
+          When we plot Seaborn Heatmap and want to make it colorful.
+          then we often try out defferent inbuilt cmaps.
+          Just see how they look and choose your cmap!
+        <br>Check these Out : </p>
+        
+        <div class="row">
+          <div class="col-lg-4">
+            Make necessary imports: <br>
+              <div id="codeblock">
+                
+              <code>import numpy as np <br>
+                import pandas as pd <br>
+                import matplotlib.pyplot as plt <br>
+                import seaborn as sns <br>
+                %matplotlib inline</code>
+              </div>
+         </div>
+
+         <div class="col-lg-8">
+          Here we are creating dummy data to visualize heatmap as below(Changing cmap Gives the result as below): <br>
+              <div id="codeblock">               
+              <code>df = pd.DataFrame(np.random.random((10,10)), columns=["a","b","c","d","e","f","g","h","i","j"]) <br>
+                customfontdict={'family': 'fantasy','color':  'blue', 'weight': 'bold','size':60} <br>
+                plt.figure(figsize=(20,15),edgecolor='black')<br>
+                sns_plot=sns.heatmap(df,cmap='Accent')<br>
+                plt.title('Accent',fontdict=customfontdict,y=-0.01) </code>
+              </div>
+            </div>
+        </div>
+
+        <div class="container pt-3 text-center">
+            <div class="row pt-3" >
+            <div id="plot" class="col-sm"></div>
+            <div id="plot" class="col-sm"></div>
+            <div id="plot" class="col-sm"></div>
+            <div id="plot" class="col-sm"></div>
+            </div>
+            <div class="row pt-3" >
+            <div id="plot" class="col-sm"></div>
+            <div id="plot" class="col-sm"></div>
+            <div id="plot" class="col-sm"></div>
+            <div id="plot" class="col-sm"></div>
+            </div>
+        
+            <div class="row btn-group  p-3">
+            <button id="prev" onclick=prevImage() type="button" class="btn btn-primary p-3 btn-block">Previous</button>
+            <button id="next" onclick=nextImage() type="button" class="btn btn-primary p-3 btn-block">Next</button>
+             </div>
+            </div>
+    </div>
+</div> 
+</section>
+
+
+
+<section class="s1">
+  <div class="main-container">
+      <p>Find me on social media </p>            
+      <div class="footer-wrapper">                       
+          <div><a href="https://www.facebook.com/parabrajaram10" class="fa fa-facebook-official " target="_blank"></a></div>
+          <div><a href="https://twitter.com/rajaram_parab" class="fa fa-twitter " target="_blank"></a></div>
+          <div><a href="https://www.linkedin.com/in/rajaram-parab-394994ab/" class="fa fa-linkedin" target="_blank"></a> </div>           
+      </div>
+  </div>
+</section>
+
+
+   
+    <script src="../scripts/script-plot.js"></script>
+    <script src="../scripts/blobs.js"></script> 
+</body>
+</html>
